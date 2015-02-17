@@ -27,6 +27,13 @@ public class TextFileTest {
 		TextFile file = new TextFile("");
 		assertEquals(file.getCharCount(), 0);	
 	}
+
+	@Test
+	public void charCount_testing_with_few_lines_of_text() {
+		TextFile file = new TextFile("hello, How are you?\nI am fine\nAnd you?\n");
+		assertEquals(file.getCharCount(), 39);	
+	}
+
 	@Test
 	public void lineCount_of_HELLO_WORLD_should_be_1() {
 		TextFile file = new TextFile("HELLO WORLD");
