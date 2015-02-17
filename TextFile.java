@@ -14,4 +14,9 @@ public class TextFile {
 		if(text.equals("")) return 0;
 		return text.split("").length;
 	}
+
+	int getLineCount() {
+		if(text.equals("")) return 0;
+		return text.split("\n").length;
+	}
 }

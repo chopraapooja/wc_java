@@ -27,4 +27,14 @@ public class TextFileTest {
 		TextFile file = new TextFile("");
 		assertEquals(file.getCharCount(), 0);	
 	}
+	@Test
+	public void lineCount_of_HELLO_WORLD_should_be_1() {
+		TextFile file = new TextFile("HELLO WORLD");
+		assertEquals(file.getLineCount(), 1);	
+	}
+	@Test
+	public void lineCount_of_EMPTY_STRING_should_be_0() {
+		TextFile file = new TextFile("");
+		assertEquals(file.getLineCount(), 0);	
+	}
 }
