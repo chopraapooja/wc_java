@@ -3,10 +3,14 @@ import java.io.BufferedReader;
 import java.io.File;
 
 public class WC {
-	String text;
+	private String text;
 	
 	WC(String text) {
 		this.text = text;
+	}
+
+	String getText() {
+		return text;
 	}
 
 	int getWordCount() {
@@ -30,7 +34,6 @@ public class WC {
 		int length = (int)file.length();
 		char contants[] = new char[length];
 		br.read(contants,0,length);
-			return new WC(new String(contants));
+		return new WC(new String(contants));
 	}
-
 }
